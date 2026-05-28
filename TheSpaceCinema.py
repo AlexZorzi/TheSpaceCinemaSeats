@@ -30,7 +30,7 @@ class TheSpaceCinema:
         return films
 
     def getShowingGroups(self, cinema, film):
-        api = f"{self.API_CINEMAS}/{cinema["cinemaId"]}/films/{film["filmId"]}/showingGroups?minEmbargoLevel=3"
+        api = f"{self.API_CINEMAS}/{cinema['cinemaId']}/films/{film['filmId']}/showingGroups?minEmbargoLevel=3"
         s = requests.Session()
         s.get(self.BASE)
         r = s.get(api)
