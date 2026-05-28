@@ -1,0 +1,16 @@
+meta {
+  name: cinemas
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://www.thespacecinema.it/api/microservice/showings/cinemas
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: showingGroups
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://www.thespacecinema.it/api/microservice/showings/cinemas/1023/films/HO00003026/showingGroups?minEmbargoLevel=3
+  body: none
+  auth: none
+}
+
+params:query {
+  minEmbargoLevel: 3
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

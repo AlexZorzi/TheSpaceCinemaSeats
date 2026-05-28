@@ -1,0 +1,101 @@
+meta {
+  name: orderMultiArea
+  type: http
+  seq: 10
+}
+
+post {
+  url: https://www.thespacecinema.it/api/microservice/booking/order
+  body: json
+  auth: inherit
+}
+
+headers {
+  accept: application/json
+  accept-language: en-US,en;q=0.9,it-IT;q=0.8,it;q=0.7
+  cache-control: no-cache
+  content-type: application/json
+  Cookie: cinemaId=1023; cinemaName=verona; analyticsCinemaName=Verona; cinemaCurrency=EUR; isSecondaryMarket=false; vuecinemas-it#lang=it-IT; ASP.NET_SessionId=1tgavufg2nqurl5o4vg33jor; __cflb=02DiuE2nAGMFu3TxDikSow61ukPuq1im35on763dbPZoA; SC_ANALYTICS_GLOBAL_COOKIE=b3be2dad74514048aba946ad3a835b47|True; __RequestVerificationToken=efQvp2WBUi-SCV8o5IoOcoUIi0I5NZqnUOC9bKrECE2MOga0wrBWsJOiFnZ6mv74pNIz103Quu6wClFy9NmTgGLT0OUTsQjpSt2SkccSIFI1; microservicesToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2YzZkYWY2My04YTZjLTRlZTUtYjgxZS1iOTYzNGI1MGMxM2EiLCJDb3VudHJ5IjoiSVQiLCJBdXRoIjoiMyIsIlNob3dpbmciOiIzIiwiQm9va2luZyI6IjMiLCJQYXltZW50IjoiMyIsIlBhcnRuZXIiOiIwIiwiTG95YWx0eSI6IjMiLCJDYW1wYWlnblRyYWNraW5nQ29kZSI6IiIsIkNsaWVudE5hbWUiOiIiLCJuYmYiOjE3Njc3ODM4MzQsImV4cCI6MTc2NzgyNzAzNCwiaXNzIjoiUHJvZCJ9.2ezCBV8F_iyjS3AueNlzbwL4218Hx0cl7qh8hZfbu_c; microservicesRefreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2YzZkYWY2My04YTZjLTRlZTUtYjgxZS1iOTYzNGI1MGMxM2EiLCJDb3VudHJ5IjoiSVQiLCJJc0Fub255bW91cyI6IlRydWUiLCJuYmYiOjE3Njc3ODM4MzQsImV4cCI6MTc2ODM4ODYzNCwiaXNzIjoiQXV0aFByb2QifQ.8nW992AbL7s01fKAIuTPAECX0jZruErMYWGmifirVPM; accessTokenExpirationTime=2026-01-07T23%3A03%3A54Z; refreshTokenExpirationTime=2026-01-14T11%3A03%3A54Z; hasLayout=true
+  origin: https://www.thespacecinema.it
+  pragma: no-cache
+  priority: u=1, i
+  referer: https://www.thespacecinema.it/prenotare-il-biglietto/summary/1023/HO00003026/44514
+  sec-ch-ua: "Brave";v="143", "Chromium";v="143", "Not A(Brand";v="24"
+  sec-ch-ua-arch: "x86"
+  sec-ch-ua-bitness: "64"
+  sec-ch-ua-full-version-list: "Brave";v="143.0.0.0", "Chromium";v="143.0.0.0", "Not A(Brand";v="24.0.0.0"
+  sec-ch-ua-mobile: ?0
+  sec-ch-ua-model: ""
+  sec-ch-ua-platform: "Windows"
+  sec-ch-ua-platform-version: "19.0.0"
+  sec-fetch-dest: empty
+  sec-fetch-mode: cors
+  sec-fetch-site: same-origin
+  sec-gpc: 1
+  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+}
+
+body:json {
+  {
+    "cinemaId": "1023",
+    "sessionId": "44514",
+    "customer": {
+      "email": "lalla@llall.com"
+    },
+    "tickets": [
+      {
+        "areaCategoryCode": "0000000002",
+        "code": "0145",
+        "priceInCents": 1270,
+        "seats": [
+          {
+            "areaNumber": 2,
+            "rowIndex": 2,
+            "columnIndex": 4
+          }
+        ]
+      },
+      {
+        "areaCategoryCode": "0000000003",
+        "code": "0909",
+        "priceInCents": 1070,
+        "seats": [
+          {
+            "areaNumber": 1,
+            "rowIndex": 0,
+            "columnIndex": 4
+          }
+        ]
+      },
+      {
+        "areaCategoryCode": "0000000004",
+        "code": "0910",
+        "priceInCents": 920,
+        "seats": [
+          {
+            "areaNumber": 3,
+            "rowIndex": 5,
+            "columnIndex": 5
+          }
+        ]
+      },
+      {
+        "areaCategoryCode": "0000000005",
+        "code": "0911",
+        "priceInCents": 770,
+        "seats": [
+          {
+            "areaNumber": 4,
+            "rowIndex": 9,
+            "columnIndex": 4
+          }
+        ]
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

@@ -1,0 +1,44 @@
+meta {
+  name: ShowingGroups2
+  type: http
+  seq: 6
+}
+
+get {
+  url: https://www.thespacecinema.it/api/microservice/showings/cinemas/1023/films/HO00003026/showingGroups?minEmbargoLevel=3
+  body: none
+  auth: inherit
+}
+
+params:query {
+  minEmbargoLevel: 3
+}
+
+headers {
+  accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8
+  accept-language: en-US,en;q=0.9,it-IT;q=0.8,it;q=0.7
+  cache-control: no-cache
+  Cookie: cinemaId=1023; cinemaName=verona; analyticsCinemaName=Verona; cinemaCurrency=EUR; isSecondaryMarket=false; vuecinemas-it#lang=it-IT; ASP.NET_SessionId=1tgavufg2nqurl5o4vg33jor; __cflb=02DiuE2nAGMFu3TxDikSow61ukPuq1im35on763dbPZoA; SC_ANALYTICS_GLOBAL_COOKIE=b3be2dad74514048aba946ad3a835b47|True; __RequestVerificationToken=efQvp2WBUi-SCV8o5IoOcoUIi0I5NZqnUOC9bKrECE2MOga0wrBWsJOiFnZ6mv74pNIz103Quu6wClFy9NmTgGLT0OUTsQjpSt2SkccSIFI1; microservicesToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2YzZkYWY2My04YTZjLTRlZTUtYjgxZS1iOTYzNGI1MGMxM2EiLCJDb3VudHJ5IjoiSVQiLCJBdXRoIjoiMyIsIlNob3dpbmciOiIzIiwiQm9va2luZyI6IjMiLCJQYXltZW50IjoiMyIsIlBhcnRuZXIiOiIwIiwiTG95YWx0eSI6IjMiLCJDYW1wYWlnblRyYWNraW5nQ29kZSI6IiIsIkNsaWVudE5hbWUiOiIiLCJuYmYiOjE3Njc3ODM4MzQsImV4cCI6MTc2NzgyNzAzNCwiaXNzIjoiUHJvZCJ9.2ezCBV8F_iyjS3AueNlzbwL4218Hx0cl7qh8hZfbu_c; microservicesRefreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2YzZkYWY2My04YTZjLTRlZTUtYjgxZS1iOTYzNGI1MGMxM2EiLCJDb3VudHJ5IjoiSVQiLCJJc0Fub255bW91cyI6IlRydWUiLCJuYmYiOjE3Njc3ODM4MzQsImV4cCI6MTc2ODM4ODYzNCwiaXNzIjoiQXV0aFByb2QifQ.8nW992AbL7s01fKAIuTPAECX0jZruErMYWGmifirVPM; accessTokenExpirationTime=2026-01-07T23%3A03%3A54Z; refreshTokenExpirationTime=2026-01-14T11%3A03%3A54Z; hasLayout=true
+  pragma: no-cache
+  priority: u=0, i
+  sec-ch-ua: "Brave";v="143", "Chromium";v="143", "Not A(Brand";v="24"
+  sec-ch-ua-arch: "x86"
+  sec-ch-ua-bitness: "64"
+  sec-ch-ua-full-version-list: "Brave";v="143.0.0.0", "Chromium";v="143.0.0.0", "Not A(Brand";v="24.0.0.0"
+  sec-ch-ua-mobile: ?0
+  sec-ch-ua-model: ""
+  sec-ch-ua-platform: "Windows"
+  sec-ch-ua-platform-version: "19.0.0"
+  sec-fetch-dest: document
+  sec-fetch-mode: navigate
+  sec-fetch-site: none
+  sec-fetch-user: ?1
+  sec-gpc: 1
+  upgrade-insecure-requests: 1
+  user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}

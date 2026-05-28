@@ -1,0 +1,20 @@
+meta {
+  name: films
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://www.thespacecinema.it/api/microservice/showings/films?cinemaId=1023
+  body: none
+  auth: inherit
+}
+
+params:query {
+  cinemaId: 1023
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

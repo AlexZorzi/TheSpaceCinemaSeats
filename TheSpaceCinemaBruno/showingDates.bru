@@ -1,0 +1,22 @@
+meta {
+  name: showingDates
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://www.thespacecinema.it/api/microservice/showings/showingDates?cinemaId=1023&minEmbargoLevel=2&forNextWeek=true
+  body: none
+  auth: none
+}
+
+params:query {
+  cinemaId: 1023
+  minEmbargoLevel: 2
+  forNextWeek: true
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}
